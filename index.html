@@ -10,45 +10,82 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Maria D. Khosla">
     <meta name="keywords" content="WDD 131, Dynamic Web Fundamentals, Maria D. Khosla">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
 
     <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <span>WDD 131 - Dynamic Web Fundamentals</span>
-
-        <nav>
-
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://byui.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
-                target="_blank">Favorite Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
     </header>
 
+    <nav>
+
+        <a href="#">LinkedIn</a>
+        <a href="#">I-Learn</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+
+    </nav>
+
+    <h1>Maria D. Khosla</h1>
+
+
     <main>
-        <section class="card">
+
+
+
+        <section class="card about">
             <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile Image">
-            <p>My name is Maria D. Khosla, and I am excited to be part of the WDD 131 course!</p>
+
+            <div class="about-content">
+
+                <p>My name is Maria D. Khosla, I was born in Michoacán, Mexico, and I am currently live in Salt Lake
+                    City, Utah. And I am studying web development in the WDD 131: Dynamic Web
+                    Fundamentals course.
+                    I enjoy learning how to create responsive, user-friendly websites using HTML, CSS, and JavaScript. I
+                    am passionate about
+                    improving my technical skills and building professional web experiences.</p>
+
+
+                <img src="images/profile.jpg" alt="Profile Image">
+            </div>
+            <div class="country">
+                <img src="images/mexicobandera.jpg" alt="Flag of Mexico">
+                <p>The national flag of Mexico (Spanish: bandera nacional de México) is a vertical tricolour of green,
+                    white, and red with
+                    the national coat of arms charged in the center of the white stripe. While the meaning of the
+                    colors has changed over
+                    time, these three colors were adopted by Mexico following independence from Spain during the
+                    country's War of
+                    Independence, and subsequent First Mexican Empire.</p>
+
+            </div>
+
         </section>
-        <section class="card">
+
+
+        <section class="card resources">
             <h2>Web Dev Resources</h2>
-            <img src="images/resources.jpg" alt="Web Development resources">
+
+
             <ul>
-                <li>MDN WEB Docs</li>
-                <li>W3Schools</li>
-                <li>CSS Tricks</li>
+                <li><a href="#"></a>MDN WEB Docs</a></li>
+                <li><a href="#"></a>W3Schools</a></li>
+                <li><a href="#"></a>CSS Tricks</a></li>
             </ul>
         </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="currentYear"></span> Maria D. Khosla. Utah/United States</p>
+        <p>&copy; <span id="currentyear"></span> Maria D. Khosla. Salt Lake City, Utah/United States</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
 
 </body>
 
