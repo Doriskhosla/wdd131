@@ -18,7 +18,8 @@ header span {
     font-weight: bold;
 }
 
-*/ PAGE TITLE */ h1 {
+/* PAGE TITLE */
+h1 {
     text-align: center;
     margin: 30px;
 }
@@ -50,6 +51,10 @@ nav a {
 
 nav a:hover {
     background-color: #0f4c75;
+    color: #ffffff;
+}
+
+nav a {
     transition: 0.3;
 }
 
