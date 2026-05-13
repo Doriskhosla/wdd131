@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W02 Activity showing javaScript loops and console output. ">
+    <title>W02 Activity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav> <a href="#">Operator</a> <a href="#">Description</a> <a href="#">Example</a> <a href="#">Returns</a>
+        </nav>
+    </header>
+    <main>
+        <h1>W02 Activity</h1>
+        <p>Open the browser console to see the results.</p>
+    </main>
+    <script>
+        const studentReport = [11, 42, 33, 64, 29, 37, 44]; for (let i = 0; i < studentReport.length; i++) { if (studentReport[i] < 30) { console.log(studentReport[i]); } }    </script>
+    <section>
+        <h2>Assignment Operators</h2>
+        <p>Assignment operators are used to assign values to variables.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Returns</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>=</td>
+                    <td>Assigns a value to a variable</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Adds a value to a variable</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtracts a value from a variable</td>
+                    <td>x -= y</td>
+                    <td>x = x - y</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplies a variable by a value</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Divides a variable by a value</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>Assigns a remainder to a variable</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>Exponentiates a variable by a value</td>
+                    <td>x **= y</td>
+                    <td>x = x ** y</td>
+                </tr>
+                <tr>
+                    <td>&amp;&amp;=</td>
+                    <td>Logical AND assignment</td>
+                    <td>x &amp;&amp;= y</td>
+                    <td>x = x &amp;&amp; y</td>
+                </tr>
+                <tr>
+                    <td>||=</td>
+                    <td>Logical OR assignment</td>
+                    <td>x ||= y</td>
+                    <td>x = x || y</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </section>
+
+    <h2>Arithmetic Operators</h2>
+    <p>Arithmetic operators are used to perform mathematical calculations.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Same As</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+                <td>x + y</td>
+                <td>x + y</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+                <td>x - y</td>
+                <td>x - y</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>x * y</td>
+                <td>x * y</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+                <td>x / y</td>
+                <td>x / y</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus (Remainder)</td>
+                <td>x % y</td>
+                <td>x % y</td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Exponentiation</td>
+                <td>x ** y</td>
+                <td>x ** y</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section>
+        <h2>Comparison Operators</h2>
+        <p>Comparison operators compare two values and return a boolean (true/false).</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Returns</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>==</td>
+                    <td>Equal to</td>
+                    <td>x == y</td>
+                    <td>true if equal</td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>Strict equal to</td>
+                    <td>x === y</td>
+                    <td>true if equal & same type</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Not equal to</td>
+                    <td>x != y</td>
+                    <td>true if not equal</td>
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>Strict not equal</td>
+                    <td>x !== y</td>
+                    <td>true if not equal or different type</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>Less than</td>
+                    <td>x &lt; y</td>
+                    <td>true if x is less</td>
+                </tr>
+                <tr>
+                    <td>&lt;=</td>
+                    <td>Less than or equal</td>
+                    <td>x &lt;= y</td>
+                    <td>true if x is less or equal</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+    <section>
+        <h2>Logical Operators</h2>
+        <p>Logical operators combine or invert boolean expressions.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Returns</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&amp;&amp;</td>
+                    <td>Logical AND</td>
+                    <td>x &amp;&amp; y</td>
+                    <td>true if both are true</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Logical OR</td>
+                    <td>x || y</td>
+                    <td>true if either is true</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Logical NOT</td>
+                    <td>!x</td>
+                    <td>true if x is false</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/*Apply styles when viewport is 500px or wider*/
+
+@media screen and (min-width: 500px) {}
+
+/*Header: black background with white text*/
+header {
+    background-color: black;
+    color: white;
+}
+
+/*Main: two equal columns */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
