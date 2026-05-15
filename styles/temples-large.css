@@ -1,12 +1,16 @@
 @media (min-width: 700px) {
+
     .gallery {
         grid-template-columns: repeat(3, 1fr);
 
-    }
-}
 
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+
+    }
+
+    nav {
+
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
