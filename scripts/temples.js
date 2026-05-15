@@ -1,13 +1,33 @@
+const menuBottom = document.querySelector("#menu");
+const nav = document.querySelector("#navMenu");
 
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+menuBottom.addEventListener("click", function () {
 
-const menuButton = document.querySelector("#menu");
-const navMenu = document.querySelector("#navMenu");
 
-menuButton.textContent = "☰";
+    // Toggle the display of the navigation menu
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 
-menuButton.addEventListener("click", () => {
-    navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
-    menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
+    // Toggle icon
+    menuBottom.textContent =
+        menuBottom.textContent === "☰" ? "✖" : "☰";
+
+
+    // Toggle the display of the navigation menu
+    nav.style.display =
+        nav.style.display === "flex" ? "none" : "flex";
+
+    // Toggle icon
+
+    menuBottom.textContent =
+        menuBottom.textContent === "☰" ? "✖" : "☰";
+});
+
+// Close nav when a link is clicked
+document.querySelectorAll("#navMenu a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        nav.style.display = "none";
+        menuBottom.textContent = "☰";
+    });
 });
