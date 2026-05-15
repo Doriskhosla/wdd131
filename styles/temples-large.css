@@ -2,9 +2,8 @@
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
-
-
-
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     nav {
@@ -12,5 +11,10 @@
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        background: none;
+    }
+
+    #menu {
+        display: none;
     }
 }
