@@ -23,3 +23,9 @@ document.querySelectorAll("#navMenu a").forEach(function (link) {
         menuButton.textContent = "☰";
     });
 });
+
+//footer Dynamic Year
+document.getElementById("CurrentYear").textContent = new Date().getFullYear();
+
+//footer Last Modified
+document.getElementById("lastModified").textContent = document.lastModified;
