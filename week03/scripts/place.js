@@ -13,7 +13,7 @@ if (temp <= 10 && speed > 4.8) {
     windChill = calculateWindChill(temp, speed) + " °C";
 }
 
-document.getElementById("windChill").textContent = windChill;
+document.getElementById("wind-Chill").textContent = windChill;
 
 document.getElementById("year").textContent = new Date().getFullYear();
 

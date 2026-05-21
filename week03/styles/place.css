@@ -1,11 +1,11 @@
 :root {
-    --primary: #8b5e3c;
+    --primary: #8a7f77;
     /* warm terracotta */
-    --secondary: #f4efe6;
+    --secondary: #c9c2b4;
     /* soft stone background */
-    --accent: #d4a373;
+    --accent: #7f766d;
     /* golden highlight */
-    --text: #2b2b2b;
+    --text: #373232;
     /* dark readable text */
 }
 
@@ -43,6 +43,6 @@ picture img {
     }
 }
 
-.weather.icon {
+.weather-icon {
     display: none;
 }
