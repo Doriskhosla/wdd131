@@ -1,0 +1,48 @@
+:root {
+    --primary: #8b5e3c;
+    /* warm terracotta */
+    --secondary: #f4efe6;
+    /* soft stone background */
+    --accent: #d4a373;
+    /* golden highlight */
+    --text: #2b2b2b;
+    /* dark readable text */
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+picture img {
+    width: 100%;
+    max-height: 80vh;
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .weather h2::after {
+        content: "⛅";
+    }
+}
+
+.weather.icon {
+    display: none;
+}
