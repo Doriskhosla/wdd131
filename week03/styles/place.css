@@ -1,18 +1,19 @@
 :root {
-    --primary: #8a7f77;
+    --primary: #7a6f69;
     /* warm terracotta */
-    --secondary: #c9c2b4;
+    --secondary: #e6e0d6;
     /* soft stone background */
     --accent: #7f766d;
     /* golden highlight */
-    --text: #373232;
+    --text: #1f1a17;
     /* dark readable text */
 }
 
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: var(--text);
 }
 
 header {
@@ -22,11 +23,29 @@ header {
     text-align: center;
 }
 
+/* HERO IMAGE */
 picture img {
     width: 100%;
-    max-height: 80vh;
-    display: block;
+    max-height: 250px;
     object-fit: cover;
+    display: block;
+}
+
+/* WEATHER ICON */
+.weather-icon {
+    width: 40px;
+    height: auto;
+}
+
+/* WEATHER BOX */
+.weather {
+    background-color: var(--secondary);
+    border-radius: 8px;
+}
+
+/* LAYOUT */
+main {
+    padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -34,15 +53,24 @@ picture img {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1rem;
+        align-items: start;
     }
 }
 
-@media (min-width: 768px) {
-    .weather h2::after {
-        content: "⛅";
-    }
+.weather h2::after {
+    content: "⛅";
 }
 
-.weather-icon {
-    display: none;
+
+section {
+    padding: 1rem;
+    background: var(--secondary);
+    color: var(--text);
+}
+
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

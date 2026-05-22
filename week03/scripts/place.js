@@ -6,14 +6,10 @@ function calculateWindChill(temp, speed) {
         13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16)
     ).toFixed(1);
 }
+let windchill = 0;
 
-let windChill = "N/A";
 
-if (temp <= 10 && speed > 4.8) {
-    windChill = calculateWindChill(temp, speed) + " °C";
-}
-
-document.getElementById("wind-Chill").textContent = windChill;
+document.getElementById("wind-chill").textContent = windchill;
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
