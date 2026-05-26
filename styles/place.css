@@ -21,6 +21,8 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    border-bottom: 3px solid var(--accent);
+    border-top: 3px solid var(--accent);
 }
 
 header h1 {
@@ -28,14 +30,6 @@ header h1 {
     font-size: 4rem;
     font-weight: 900;
     margin: 0;
-}
-
-header {
-    border-bottom: 3px solid var(--accent);
-}
-
-header {
-    border-top: 3px solid var(--accent);
 }
 
 /* HERO IMAGE */
@@ -91,9 +85,9 @@ picture img {
 }
 
 footer {
-    background-color: #E8c27A;
+    background-color: var(--primary);
     /*Soft Gold */
-    color: #2a2a2a;
+    color: var(var(--text));
     /*Dark charcoal for readability */
     text-align: center;
     padding: 1rem;
