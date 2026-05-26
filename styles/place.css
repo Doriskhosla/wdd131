@@ -86,9 +86,7 @@ picture img {
 
 footer {
     background-color: var(--primary);
-    /*Soft Gold */
-    color: var(var(--text));
-    /*Dark charcoal for readability */
+    color: var(--text);
     text-align: center;
     padding: 1rem;
     margin: auto;
