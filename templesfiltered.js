@@ -136,11 +136,10 @@ function displayTemples(templesList) {
             <img src="${temple.imageUrl}" 
                  alt="${temple.templeName}" 
                  loading="lazy">
-`;
-
+        `;
 
         gallery.appendChild(card);
-
     });
 }
+
 displayTemples(temples);

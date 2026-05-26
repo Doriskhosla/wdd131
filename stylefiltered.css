@@ -151,6 +151,11 @@ pre {
         padding: 0.5rem 0;
         font-size: 1.3rem;
     }
+
+    /*this is the missing rule */
+    #navMenu.show {
+        display: flex;
+    }
 }
 
 footer {
