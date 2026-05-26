@@ -118,8 +118,13 @@ pre {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-
+    /* Stronger smoke glow */
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(0, 0, 0, 0.25);
 }
+
 
 .gallery figure h2 {
     margin-top: 0.5rem;
