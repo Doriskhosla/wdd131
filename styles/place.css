@@ -1,8 +1,12 @@
 :root {
-    --primary: #7a6f69;
+    --primary: #E8C27A;
+    /* Soft Gold */
     --secondary: #e6e0d6;
-    --accent: #7f766d;
-    --text: #1f1a17;
+    /* Light neutral background */
+    --accent: #C9A35E;
+    /* Slightly darker gold for borders */
+    --text: #2A2A2A;
+    /* Dark charcoal for readability */
 }
 
 body {
@@ -24,6 +28,14 @@ header h1 {
     font-size: 4rem;
     font-weight: 900;
     margin: 0;
+}
+
+header {
+    border-bottom: 3px solid var(--accent);
+}
+
+header {
+    border-top: 3px solid var(--accent);
 }
 
 /* HERO IMAGE */
@@ -79,8 +91,10 @@ picture img {
 }
 
 footer {
-    background-color: var(--primary);
-    color: #ffffff;
+    background-color: #E8c27A;
+    /*Soft Gold */
+    color: #2a2a2a;
+    /*Dark charcoal for readability */
     text-align: center;
     padding: 1rem;
     margin: auto;
