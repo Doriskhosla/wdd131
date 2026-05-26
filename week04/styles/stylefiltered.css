@@ -6,9 +6,39 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    /* pushes menu to the right */
+    align-items: center;
     background-color: #003366;
-    padding: 15px;
+    padding: 1rem;
 }
+
+#navMenu a {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    /* makes the words bigger */
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#menu {
+    font-size: 2rem;
+    /* makes the ☰ icon bigger */
+    color: #eee;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
 
 nav a {
     color: white;
@@ -80,7 +110,7 @@ pre {
     background: whitesmoke;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0, 1);
+    box-shadow: 0 2px 8px rgba(236, 228, 228, 0.1);
 }
 
 .gallery img {
@@ -89,4 +119,45 @@ pre {
     object-fit: cover;
     border-radius: 8px;
 
+}
+
+.gallery figure h2 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.gallery figure p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    #navMenu {
+        display: none;
+        /* hidden until JS sets it to flex */
+        flex-direction: column;
+        text-align: right;
+        background: white;
+        padding: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: 60px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #navMenu a {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.3rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366;
+    /* or your chosen color */
+    color: white;
+    margin-top: 2rem;
 }

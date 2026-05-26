@@ -89,7 +89,7 @@ const temples = [
 
     },
     {
-        templeName: "Rome Italy Italy",
+        templeName: "Rome Italy",
         location: "Rome Italy",
         dedicated: "2019, March, 12",
         area: 41010,
@@ -101,7 +101,7 @@ const temples = [
     {
         templeName: "Seoul Korea",
         location: "Seoul, Korea",
-        dedicated: "1985, December 15",
+        dedicated: "1985, December, 15",
         area: 28057,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg"
