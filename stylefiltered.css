@@ -134,6 +134,11 @@ pre {
     border-radius: 4px;
 }
 
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
 /* Temple card container */
 .temple-card {
     background: #ffffff;
@@ -161,6 +166,11 @@ pre {
 }
 
 @media (max-width: 600px) {
+    nav {
+        display: none;
+        /* hide nav on mobile */
+    }
+
     #navMenu {
         display: none;
         /* hidden until JS sets it to flex */
