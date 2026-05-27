@@ -127,6 +127,13 @@ pre {
     transition: box-shadow 0.25s ease-out;
 }
 
+:focus-visible {
+    outline: 3px solid #7a6f69;
+    /* or any high-contrast color */
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
 /* Temple card container */
 .temple-card {
     background: #ffffff;
