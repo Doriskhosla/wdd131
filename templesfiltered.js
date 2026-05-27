@@ -117,29 +117,53 @@ const temples = [
     },
 ];
 
-
+// Select the gallery section
 const gallery = document.querySelector(".gallery");
 
-function displayTemples(templesList) {
-    gallery.innerHTML = "";
+// Function to display temples
+function displayTemples(filteredTemples) {
+    gallery.innerHTML = ""; // Clear previous content
 
-    templesList.forEach(function (temple) {
-        const card = document.createElement("figure");
+    filteredTemples.forEach(temple => {
+        const card = document.createElement("div");
+        card.classList.add("temple-card");
 
         card.innerHTML = `
-            <h2>${temple.templeName}</h2>
-
-            <p><strong>Location:</strong> ${temple.location}</p>
-            <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-            <p><strong>Area:</strong> ${temple.area} sq ft</p>
-
-            <img src="${temple.imageUrl}" 
-                 alt="${temple.templeName}" 
-                 loading="lazy">
-        `;
+         <h2>${temple.templeName}</h2>
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p><strong>Area:</strong> ${temple.area} sq ft</p>
+    <img 
+        src="${temple.imageUrl}" 
+        alt="${temple.templeName}" 
+        loading="lazy"
+        width="300"
+        height="200"
+    >
+`;
 
         gallery.appendChild(card);
     });
 }
-
+// Display all temples on page load
 displayTemples(temples);
+// Navigation filters
+document.getElementById("home").addEventListener("click", () => {
+    displayTemples(temples);
+});
+
+document.getElementById("old").addEventListener("click", () => {
+    displayTemples(temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900));
+});
+
+document.getElementById("new").addEventListener("click", () => {
+    displayTemples(temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000));
+});
+
+document.getElementById("large").addEventListener("click", () => {
+    displayTemples(temples.filter(t => t.area > 90000));
+});
+
+document.getElementById("small").addEventListener("click", () => {
+    displayTemples(temples.filter(t => t.area < 10000));
+});

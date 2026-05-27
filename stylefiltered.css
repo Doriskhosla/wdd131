@@ -104,6 +104,7 @@ pre {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
+    align-items: start;
 }
 
 .gallery figure {
@@ -118,11 +119,27 @@ pre {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    /* Stronger smoke glow */
+
+    /* Smoke glow with smoother load */
     box-shadow:
-        0 0 20px rgba(0, 0, 0, 0.6),
-        0 0 40px rgba(0, 0, 0, 0.4),
-        0 0 60px rgba(0, 0, 0, 0.25);
+        0 0 20px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.25s ease-out;
+}
+
+/* Temple card container */
+.temple-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 300px;
+    min-height: 420px;
+    /* reserves space so nothing jumps */
+    /* keeps cards from getting huge */
+    margin: 20px auto;
+    /* centers each card */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 
