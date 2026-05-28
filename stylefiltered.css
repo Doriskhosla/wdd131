@@ -195,7 +195,36 @@ nav {
     #navMenu.show {
         display: flex;
     }
+
 }
+
+/* DESKTOP VIEW FIX */
+@media (min-width: 601px) {
+
+    /* Show the nav normally */
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    /* Make sure the menu is horizontal */
+    #navMenu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* Hide the hamburger icon on desktop */
+    #menu {
+        display: none;
+    }
+}
+
+
+
 
 footer {
     text-align: center;
