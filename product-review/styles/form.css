@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "playfair Display", serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(93, 90, 90);
+    color: yellow;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
