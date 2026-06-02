@@ -33,3 +33,6 @@ products.forEach(product => {
     option.textContent = product.name;
     select.appendChild(option);
 });
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+});

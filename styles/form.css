@@ -67,8 +67,21 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
 footer {
     text-align: center;
     padding: 2rem;
     margin: auto;
+}
+
+@media (max-width: 600px) {
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        display: grid;
+        gap: 10px;
+    }
 }

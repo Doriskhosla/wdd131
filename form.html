@@ -7,6 +7,7 @@
     <title>Product Review Form</title>
 
     <meta name="description" content="Product review form for WDD 131 where users can rate and review products.">
+    <meta name="author" content="Maria D Khosla">
 
     <link rel="stylesheet" href="styles/form.css">
 </head>
@@ -25,9 +26,6 @@
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product...</option>
             </select>
-
-
-            <!-- You will add the rest of the fields later (rating, date, etc.)-->
 
 
             <!-- Rating -->
@@ -49,53 +47,56 @@
 
                 <input type="radio" id="rating5" name="rating" value="5" required>
                 <label for="rating5">5 ★★★★★</label>
+            </fieldset>
 
-                <!-- Date -->
+            <!-- Date -->
 
-                <label for="installDate">Date of Installation</label>
+            <label for="installDate">Date of Installation</label>
 
-                <input type="date" id="installDate" name="installDate" required>
+            <input type="date" id="installDate" name="installDate" required>
 
-                <!-- Features -->
+            <!-- Features -->
 
-                <fieldset>
-                    <legend>Useful Features</legend>
+            <fieldset>
+                <legend>Useful Features</legend>
 
-                    <input type="checkbox" id="durability" name="features" value="durability">
-                    <label for="durability">Durability</label>
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
 
-                    <input type="checkbox" id="ease" name="features" value="ease">
-                    <label for="ease">Ease of Use</label>
+                <input type="checkbox" id="ease" name="features" value="ease">
+                <label for="ease">Ease of Use</label>
 
-                    <input type="checkbox" id="design" name="features" value="design">
-                    <label for="design">Design</label>
-                </fieldset>
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
 
-                <!-- Review -->
-                <label for="review">Written Review</label>
-                <textarea id="review" name="review"></textarea>
+                <input type="checkbox" id="comfort" name="features" value="comfort">
+                <label for="comfort">Comfort</label>
 
-                <!-- Name -->
-                <label for="username">Your Name</label>
-                <input type="text" id="username" name="username">
+            </fieldset>
 
-                <!-- Submit -->
-                <input type="submit" value="Submit Review">
+            <!-- Review -->
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- Name -->
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit -->
+            <input type="submit" value="Submit Review">
 
 
         </form>
-
-
-        <footer>
-            <p>&copy; <span id="year"></span> | WDD 131 Dynamic Web Fundamentals. Maria D Khosla</p>
-        </footer>
-
-        <script src="scripts/form.js" defer></script>
-
-        <script>
-
-            document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
-
     </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | WDD 131 Dynamic Web Fundamentals. Maria D Khosla</p>
+    </footer>
+
+    <script src="scripts/form.js" defer></script>
+
+
+
 </body>
+
+</html>
