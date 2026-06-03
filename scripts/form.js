@@ -2,27 +2,27 @@ const select = document.querySelector("#productName");
 const products = [
     {
         id: "fc-1888",
-        name: "flux capacitor",
+        name: "Custom T-shirts",
         averagerating: 4.5
     },
     {
         id: "fc-2050",
-        name: "power laces",
+        name: "Embroidered Polo Shirts",
         averagerating: 4.7
     },
     {
         id: "fs-1987",
-        name: "time circuits",
+        name: "Promotional Caps",
         averagerating: 3.5
     },
     {
         id: "ac-2000",
-        name: "low voltage reactor",
+        name: "Logo Mugs",
         averagerating: 3.9
     },
     {
         id: "jj-1969",
-        name: "warp equalizer",
+        name: "Custom Jackets",
         averagerating: 5.0
     }
 ];
