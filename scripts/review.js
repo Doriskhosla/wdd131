@@ -1,7 +1,16 @@
-let count = Number(localStorage.getItem("reviewCount")) || 0;
+// Get saved review count...
+let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
 
-count++;
+// Increase the review count by 1
+reviewCount++;
 
-localStorage.setItem("reviewCount", count);
+// Store the updated count back in localStorage
+localStorage.setItem("reviewCount", reviewCount);
 
-document.querySelector("#count").textContent = count;
+//Show the review count on the page
+document.querySelector("#count").textContent = `Total Reviews Submitted: ${reviewCount}`;
+
+//footer year
+document.querySelector("#year").textContent = new Date().getFullYear();
+
+

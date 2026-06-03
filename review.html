@@ -3,18 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Maria D. Khosla">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Submit and review product ratings for WDD 131 Dynamic Web Fundamentals. See how many reviews have been submitted and read feedback from other users.">
     <title>Review Submitted</title>
+
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
-    <h1>Thank You</h1>
-    <p>Your review has been submitted successfully.</p>
 
-    <p>
-        Review Submitted:
-        <span id="count"></span>
-    </p>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="thank-you-container">
+        <div class="thank-you-card">
+
+            <h2>Thank You!</h2>
+
+            <p>Your review has been submitted successfully.</p>
+
+            <p><strong>Total Reviews Submitted:</strong> <span id="count"></span></p>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | WDD 131 Dynamic Web Fundamentals | Maria D. Khosla</p>
+    </footer>
 
     <script src="scripts/review.js"></script>
 </body>
