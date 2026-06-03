@@ -8,7 +8,7 @@ reviewCount++;
 localStorage.setItem("reviewCount", reviewCount);
 
 //Show the review count on the page
-document.querySelector("#count").textContent = `Total Reviews Submitted: ${reviewCount}`;
+document.querySelector("#count").textContent = reviewCount;
 
 //footer year
 document.querySelector("#year").textContent = new Date().getFullYear();
