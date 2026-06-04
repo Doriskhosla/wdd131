@@ -13,4 +13,3 @@ document.querySelector("#count").textContent = reviewCount;
 //footer year
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-
