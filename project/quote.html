@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request for quote</title>
+
+    <meta name="description"
+        content="Advanced Promotions SLC website showcasing custom apparel and promotional products with a gallery, product information, and contact details.">
+
+    <meta name="author" content="Maria D. Khosla">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Request for Quote</h1>
+        <button id="menu" aria-label="Open menu">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="quote.html">Request Quote</a>
+        </nav>
+    </header>
+
+    <main class="form-main">
+    <form class="quote-form" method="get" action="quote.html">
+    
+        <!-- Product -->
+        <label for="product">What product are you interested in?</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a product</option>
+            <option value="apparel">Apparel</option>
+            <option value="promotional-items">Promotional Items</option>
+            <option value="branding">Branding Services</option>
+            <option value="other">Other</option>
+        </select>
+    
+        <!-- Quantity -->
+        <label for="quantity">Estimated quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1">
+    
+        <!-- Budget -->
+        <label for="budget">Estimated budget</label>
+        <select id="budget" name="budget">
+            <option value="" disabled selected>Select budget range</option>
+            <option value="under-100">$0 - $100</option>
+            <option value="100-500">$100 - $500</option>
+            <option value="500-1000">$500 - $1,000</option>
+            <option value="1000+">$1,000+</option>
+        </select>
+    
+        <!-- Message -->
+        <label for="questions">Tell us more about your request</label>
+        <textarea id="questions" name="questions" rows="5"
+            placeholder="Example: I need t-shirts for a school event with logo printing..."></textarea>
+    
+        <!-- Name -->
+        <label for="username">Your Name</label>
+        <input type="text" id="username" name="username" required>
+    
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    
+    </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Advanced Promotions SLC</p>
+    </footer>
+
+</body>
+
+</html>

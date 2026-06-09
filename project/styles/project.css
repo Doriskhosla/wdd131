@@ -25,7 +25,7 @@ header {
     font-size: 1.2rem;
     /* makes the words bigger */
     text-decoration: none;
-    color: yellow;
+    color: rgb(234, 188, 22);
     font-weight: 600;
 }
 
@@ -285,12 +285,12 @@ footer {
     padding: 1rem;
     background-color: rgb(20, 19, 19);
     /* or your chosen color */
-    color: yellow;
+    color: rgba(238, 173, 21, 0.83);
     margin-top: 2rem;
 }
 
 footer a {
-    color: yellow;
+    color: rgba(202, 156, 55, 0.84);
     text-decoration: none;
     font-weight: bold;
 }
@@ -366,7 +366,14 @@ footer a {
     background: #f4f4f4;
     border-radius: 12px;
 
+    min-height: 800px;
+
 }
+
+h1 {
+    color: #d4af37;
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -377,4 +384,62 @@ footer a {
         opacity: 1;
         transform: translateY(0);
     }
+    }
+/* ONLY affects this page */
+.form-main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* Form box */
+form {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Button */
+input[type="submit"] {
+    margin-top: 1.5rem;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #444;
+}
+.quote-form {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-left: 8px solid #f4c542;
 }

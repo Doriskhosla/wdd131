@@ -46,8 +46,19 @@ function displayProducts() {
         const card = document.createElement("div");
         card.classList.add("product-card");
 
-        card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" loading="lazy">
+        //created image with fixed dimensions
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.loading = "lazy";
+
+        // Add width and height to prevent layout shift
+        img.width = 400; // adjust to real image width
+        img.height = 400; // adjust to real image height
+
+        card.appendChild(img);
+
+        card.innerHTML += `
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <strong>$${product.price}</strong>
