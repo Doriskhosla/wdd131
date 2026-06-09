@@ -384,7 +384,8 @@ h1 {
         opacity: 1;
         transform: translateY(0);
     }
-    }
+}
+
 /* ONLY affects this page */
 .form-main {
     display: flex;
@@ -434,6 +435,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #444;
 }
+
 .quote-form {
     background: white;
     max-width: 600px;
@@ -443,6 +445,7 @@ input[type="submit"]:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     border-left: 8px solid #f4c542;
 }
+
 .social-icons {
     margin-top: 10px;
     display: flex;
@@ -452,7 +455,7 @@ input[type="submit"]:hover {
 
 .social-icons a {
     text-decoration: none;
-    color: #a37e0e;
+    color: #6f99e7;
     font-size: 0.9rem;
 }
 
