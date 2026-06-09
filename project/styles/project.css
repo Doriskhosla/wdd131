@@ -443,3 +443,19 @@ input[type="submit"]:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     border-left: 8px solid #f4c542;
 }
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #a37e0e;
+    font-size: 0.9rem;
+}
+
+.social-icons a:hover {
+    color: #f4c542;
+}

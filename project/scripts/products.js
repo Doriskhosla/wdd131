@@ -62,7 +62,7 @@ function displayProducts() {
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <strong>$${product.price}</strong>
-            <button>View Details</button>
+            
         `;
 
         container.appendChild(card);
