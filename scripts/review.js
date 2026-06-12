@@ -7,9 +7,14 @@ reviewCount++;
 // Store the updated count back in localStorage
 localStorage.setItem("reviewCount", reviewCount);
 
-//Show the review count on the page
-document.querySelector("#count").textContent = reviewCount;
+// Show the review count on the page (safe check)
+const countEl = document.querySelector("#count");
+if (countEl) {
+    countEl.textContent = reviewCount;
+}
 
-//footer year
-document.querySelector("#year").textContent = new Date().getFullYear();
-
+// Footer year (safe check)
+const yearEl = document.querySelector("#year");
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}

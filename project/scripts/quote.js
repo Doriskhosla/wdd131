@@ -1,14 +1,21 @@
-// Get saved Request for quote count...
+
 let quoteCount = Number(localStorage.getItem("quoteCount")) || 0;
 
-// Increase the count by 1
+
 quoteCount++;
 
-// Store updated count
+
 localStorage.setItem("quoteCount", quoteCount);
 
-// Show the count on the page
-document.querySelector("#quote").textContent = quoteCount;
+// This part goes right after localStorage logic
 
-// Footer year
-document.querySelector("#year").textContent = new Date().getFullYear();
+const quoteDisplay = document.querySelector("#quoteCountDisplay");
+if (quoteDisplay) {
+    quoteDisplay.textContent = quoteCount;
+}
+
+// Footer year (safe)
+const yearEl = document.getElementById("CurrentYear");
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}

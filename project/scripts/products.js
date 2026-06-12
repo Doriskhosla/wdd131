@@ -37,36 +37,25 @@ const products = [
     }
 ];
 
-// ===== DISPLAY FUNCTION =====
+// ===== DISPLAY PRODUCTS =====
 function displayProducts() {
     const container = document.getElementById("productList");
-    container.innerHTML = "";
+    if (!container || typeof products === "undefined") return;
 
-    products.forEach(product => {
+    container.innerHTML = "";
+        products.forEach(product => {
         const card = document.createElement("div");
         card.classList.add("product-card");
 
-        //created image with fixed dimensions
-        const img = document.createElement("img");
-        img.src = product.image;
-        img.alt = product.name;
-        img.loading = "lazy";
-
-        // Add width and height to prevent layout shift
-        img.width = 400; // adjust to real image width
-        img.height = 400; // adjust to real image height
-
-        card.appendChild(img);
-
-        card.innerHTML += `
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <strong>$${product.price}</strong>
-            
-        `;
+        card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" loading="lazy" width="400" height="400">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <strong>$${product.price}</strong>
+    `;
 
         container.appendChild(card);
     });
+    
 }
-
-document.addEventListener("DOMContentLoaded", displayProducts);
+ document.addEventListener("DOMContentLoaded", displayProducts);

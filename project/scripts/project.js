@@ -6,7 +6,8 @@ const nav = document.querySelector("#navMenu");
 if (menuButton && nav) {
     menuButton.addEventListener("click", function () {
         nav.classList.toggle("show");
-        menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
+        const isOpen = nav.classList.contains("show");
+        menuButton.textContent = isOpen ? "✖" : "☰";
     });
 
     document.querySelectorAll("#navMenu a").forEach(link => {
